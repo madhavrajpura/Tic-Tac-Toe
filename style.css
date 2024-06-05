@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkblue : #aedfe3;
+    --skyblue : #227591;
+    --winner : #134955;
+}
+
+body{
+    color: var(--darkblue);
+    font-family: 'Finger Paint' , Georgia;
+}
+
+h1{
+    font-size: 65px;
+    text-transform: capitalize;
+}
+
+.container{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--skyblue);
+}
+
+#gameboard{
+    margin-left: 10px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* border: solid black;  */
+    /* box-shadow: inset; */
+}
+
+.box{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--darkblue);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-top:2px solid ;
+    border-left: 2px solid;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--darkblue);
+    color: var(--skyblue);
+    border-color: #186b89;
+    font-size: 17px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+
+button:hover{
+    cursor: pointer;
+    transform:translateY(-2px);
+}
